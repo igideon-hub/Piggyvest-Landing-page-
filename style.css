@@ -1,0 +1,398 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f7f8 !important;
+}
+.nav-link{
+    font-weight: 500 !important;
+}
+.mrsave:hover .navwhitebox{
+    visibility: visible;
+}
+.mrsave{
+    position: relative;
+}
+.navwhitebox{
+    position: absolute;
+    left: -20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 20px;
+    column-gap:50px;
+    row-gap: 20px;
+    background-color: white;
+    width: 480px;
+    height: 280px;
+    border-radius: 15px;
+    visibility: hidden;
+}
+.navwhitebox a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navwhitebox a h3{
+    font-size: 16px;
+}
+.navwhitebox a p{
+    font-size: 13px;
+}
+.hero{
+    align-items: center;
+}
+.herofirst{
+    width: 345px;
+    max-width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    padding: 5px;
+}
+.herofirst:hover{
+    background-color: black !important;
+    cursor: pointer;
+}
+.heroh{
+    width: 75%;
+    font-size: 48px;
+}
+.herop{
+    font-size: 20px;
+    width: 70%;
+}
+.getbut{
+    height: 54px;
+    border-radius: 10px !important;
+}
+.getbut:hover{
+    background-color: black !important;
+    transition: 0.5s ease;
+    transform:translate(0px,-5px);
+}
+.herosecond{
+    position: relative;
+    text-align: center;
+}
+.heroimg1{
+    max-width: 90%;
+}
+.heroimg2{
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 200px;
+    margin-left: -50px;
+}
+.heroimg3{
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 200px;
+    margin-left: -50px;
+}
+.heroimg4{
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 180px;
+    margin-left: -50px;
+}
+.heroimg5{
+    position: absolute;
+    right: 0;
+    top: 18%;
+    width: 200px;
+}
+.heroimg6{
+    position: absolute;
+    right: 0;
+    top: 55%;
+    width: 200px;
+}
+.heroimg7{
+    position: absolute;
+    right: 0;
+    top: 90%;
+    width: 200px;
+}
+
+
+
+.herosecond{
+    animation: movingimg 1s infinite linear alternate;
+}
+@keyframes movingimg {
+    from{
+        transform: translate(0px,-5px);
+    }
+    to{
+        transform: translate(0px,5px);
+    }
+}
+.yellowimg{
+    animation: yelo 2s infinite linear ;
+}
+@keyframes yelo {
+    to{
+        transform: rotate(360deg);
+    }
+}
+.yoursecurityimg{
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+}
+.yoursecuritysecond p{
+    width: 65%;
+}
+.manyways h1{
+    font-size: 48px;
+}
+.manyways p{
+    font-size: 24px;
+}
+.more{
+    position: relative;
+}
+.more::after{
+    content: '';
+    background-color: #abb7ca;
+    opacity: 0.5;
+    height: 10px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+.more:hover::after{
+    width: 100%;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.buildsah{
+    font-size: 36px;
+}
+.buildsap{
+    font-size: 17px;
+    width: 65%;
+}
+.cardbox{
+    position: relative;
+    max-width: 100%;
+}
+.cardbox1:hover{
+    color: white;
+    background-color: #003399;
+}
+.cardbox2:hover{
+    color: white;
+    background-color: #2295f2;
+}
+.cardbox3:hover{
+    color: white;
+    background-color: #069b40;
+}
+.cardbox4:hover{
+    background-color: #e5288e;
+    color: white;
+}
+.cardbox5:hover{
+    background-color: black;
+    color: white;
+}
+.cardbox6:hover{
+    background-color: #ff814b;
+    color: white;
+}
+.cardbox:hover h5{
+    color: white !important;
+}
+.cardbox:hover h6{
+    color: white !important;
+}
+.bumarr{
+    position: absolute;
+    bottom: 10%;
+}
+.image-container {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.cardbox:hover .image-container{
+    overflow-x: hidden;
+    display: block;
+    animation: moveim 0.4s ease-in-out;
+}
+.whitearrow{
+    display: none;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+}
+.cardbox:hover .whitearrow{
+    display: block;
+}
+@keyframes moveim {
+    from{
+        transform: translate(250px,150px);
+    }
+    to{
+        transform: translate(0px,0px);
+    }
+}
+
+.diversehead h1{
+    font-size: 51px;
+    font-weight: bolder;
+}
+.diversehead p{
+    font-size: 24px;
+}
+.purpleboxarrow{
+    margin-top: 240px;
+}
+.purpleboximg{
+    margin-bottom: -50px;
+}
+
+
+.savebut p{
+    font-size: 12.8px;
+    font-weight: bold;
+}
+.savebut{
+    height: 45px;
+    border-radius: 10px !important;
+    border: 1px solid #ddd !important;
+}
+.savebut:hover{
+    background-color: #f2f7f8 !important;
+    color: black !important;
+    transition: 0.5s ease;
+    transform:translate(0px,-5px);
+}
+.storiessec1 img{
+    max-width: 80%;
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.footer a:hover{
+    color: blue;
+}
+.footeric img{
+    margin-right: 15px;
+}
+
+
+
+@media (max-width:480px) {
+    .herofirst{
+        padding: 12px;
+    }
+    .mainherofirst{
+        text-align: center;
+    }
+    .heroimg2{
+        width: 120px;
+    }
+    .heroimg3{
+        width: 120px;
+    }
+    .heroimg4{
+        width: 110px;
+    }
+    .heroimg5{
+        width: 130px;
+    }
+    .heroimg6{
+        width: 130px;
+    }
+    .heroimg7{
+        width: 130px;
+    }
+    .yoursecurity{
+        display: block;
+        text-align: center;
+    }
+    .yoursecuritysecond h3{
+        font-size: 33px;
+    }
+    .yoursecuritysecond p{
+        width: 100%;
+    }
+    .yoursecurityarrow{
+        place-self: center;
+    }
+    .manyways h1{
+        font-size: 33px;
+    }
+    .manyways p{
+        font-size: 18px;
+    }
+    .cardcont{
+        display: flex;
+        flex-direction: column;
+    }
+    .image-container {
+        right: -50px;
+    }
+    .image-container img{
+        max-width: 70%;
+    }
+    .diversehead{
+        padding-top: 20px;
+    }
+    .diversehead h1{
+        font-size: 30px;
+    }
+    .diversehead p{
+        font-size: 16px;
+    }
+    .purplebox{
+        text-align: center;
+    }
+    .purplebox h2{
+        font-size: 30px !important;
+        font-weight:500 !important;
+    }
+    .purplebox p{
+        font-size: 15px !important;
+    }
+    .purpleboxarrow{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        place-self: center;
+    }
+    .purpleboxim img{
+        max-width: 100%;
+    }
+    .stories{
+        display: flex;
+        flex-direction: column-reverse ;
+    }
+    .storiessec1{
+        display: flex;
+        justify-content: center;
+    }
+    .storiessec{
+        width: 90% !important;
+        text-align: center;
+    }
+    .asfeimg{
+        display: flex;
+        flex-direction: column;
+    }
+    .asfeimg img{
+        margin-top: 30px;
+    }
+}
